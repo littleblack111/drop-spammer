@@ -8,6 +8,6 @@ while true; do
   finds=$(timeout 10 opendrop find 2>&1 | awk '{print $3}' | sort -n | tail -n 1)
   echo SPAMMING 100 TIMES
   for ((i=1; i<=100; i++)); do
-    opendrop opendrop send -f $1 -r $((RANDOM % finds)) &
+    opendrop send -f $1 -r $((RANDOM % finds)) &
   done
 done
