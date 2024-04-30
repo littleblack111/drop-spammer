@@ -1,4 +1,7 @@
 # INSTRUCTIONS
 1. install pip requirements
-2. start spam.sh
-3. open Airdrop tap on Finder
+## To spam all:
+launch ./spamall.sh `file`
+## To spam single person:
+launch ./findsingle.sh `name`
+launch ./spamsingle.sh `file` `index(of name)`
